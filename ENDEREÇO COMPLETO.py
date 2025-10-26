@@ -1,12 +1,22 @@
 def address(rua, numero, complemento, bairro, cep, cidade, estado, pais):
-    print("Seu endereço é:","Rua",rua,numero,complemento,"\nBairro:",bairro,"\nCep:",cep,"\nCidade:",cidade,"\nEstado:",estado,"\nPais:",pais)
- 
-r=input("Rua:")
-n=input("Número:")
-cp=input("Complemento:")
-b=input("Bairro:")
-cep=input("Cep:")
-c=input("Cidade:")
-e=input("Estado:")
-p=input("Pais:")
-address(r,n,cp,b,cep,c,e,p)
+    print("Seu endereço é:")
+    print("Rua:", rua, numero, complemento)
+    print("Bairro:", bairro)
+    print("CEP:", cep)
+    print("Cidade:", cidade)
+    print("Estado:", estado)
+    print("País:", pais)
+
+# Coletando os dados do usuário
+rua = input("Rua: ")
+numero = input("Número: ")
+complemento = input("Complemento: ")
+bairro = input("Bairro: ")
+cep = input("CEP: ")
+cidade = input("Cidade: ")
+estado = input("Estado: ")
+pais = input("País: ")
+
+# Chamando a função
+address(rua, numero, complemento, bairro, cep, cidade, estado, pais)
+
